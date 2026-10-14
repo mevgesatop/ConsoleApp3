@@ -38,3 +38,18 @@ else
 {
     Console.WriteLine("Ошибка: введен неверный знак операции.");
 }
+
+int[] numbers = { 2, 4, 6, 8 };
+int sum = 0;
+
+// Считаем сумму элементов с помощью цикла
+for (int i = 0; i < numbers.Length; i++)
+{
+    sum += numbers[i];
+}
+
+// Считаем среднее арифметическое
+// Приводим к double, чтобы результат мог быть дробным
+double average = (double)sum / numbers.Length;
+
+Console.WriteLine("Среднее значение: " + average);
